@@ -68,7 +68,7 @@ class CashierChange():
 
 	
 		
-newChange = CashierChange()
+# newChange = CashierChange() #commenting this out for level 2 solution
 #step 1 request change to return from cashier
 #delay exit from terminal
-input("Press Enter to exit program? ")
+# input("Press Enter to exit program? ") # commenting this out for level 2 solution
