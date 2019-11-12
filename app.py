@@ -3,7 +3,7 @@
 #TODO PROGRAM HAS TWO INPUTS
 #INPUT 1. amount due as change entered by the cashier
 #INPUT 2. amount to be issued by the customer in terms of notes and coins
-#This snipped assumes the user does not pass duplicate denominations***
+#This snipped assumes the user does not pass duplicate denominations****
 #NOTE THAT THE CODE BELOW ASSUMES THAT THE USER DOES NOT ENTER DUPLICATE DENOMINATION VALUES AND THERE ARE NO COMMAS BEFORE THE DENOMINATIONS ENTERED 
 
 class CashierChange():
@@ -22,7 +22,7 @@ class CashierChange():
 	def getDenominations(self):
 		# this will accept denominations that the user would prefer to get their change in
 		# or enter comma seperated denominations?
-		self.denominations = input("CUSTOMER: Enter our preferred comma seperated dimensions: eg 2, 5, 1 here: ").rstrip(',')
+		self.denominations = input("CUSTOMER: Enter our preferred comma seperated denominations: eg 2, 5, 1 here: ").rstrip(',')
 		self.denomListString = self.denominations.split(',');
 		self.denomListInts = [int(i) for i in self.denomListString]
 		self.retAmountToReturn(self.denomListInts)
